@@ -13,6 +13,7 @@ lib.process_image.argtypes = [
     ctypes.c_int,                    # population
     ctypes.c_int,                    # subset_side_len
     ctypes.POINTER(ctypes.c_double), # img_ref_pt
+    ctypes.POINTER(ctypes.c_double), # img_cur_pt
     ctypes.POINTER(ctypes.c_double)  # result_buffer (對應 C 的 double*)
 ]
 
